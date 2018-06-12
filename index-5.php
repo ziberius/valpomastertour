@@ -46,7 +46,7 @@
 
             <div class="top1 clearfix">
                 <header>
-                    <div class="logo_wrapper log"><a href="index.php" class="logo"><img style="max-height:100px" src="images/logo.png" alt=""></a></div>
+                    <div class="logo_wrapper log"><a href="index.php" class="logo"><img style="max-height:100px" src="images/logo_2.png" alt=""></a></div>
                 </header>
                 <div class="top2 clearfix">
                     <div class="pull-right" style="margin-bottom:10px">
@@ -64,8 +64,7 @@
                                 <div class="nav-collapse nav-collapse_ collapse">
                                     <ul class="nav sf-menu clearfix">
                                         <li><a href="index.php">Inicio</a></li>
-                                        <li><a href="index-2.php">Tours</a></li>
-                                        <li class="active"><a href="index-5.php">Servicio de Transporte</a></li>
+                                        <li  class="active"><a href="index-2.php">Tours</a></li>
                                         <li><a href="index-6.php">Contacto</a></li>
                                     </ul>
                                 </div>

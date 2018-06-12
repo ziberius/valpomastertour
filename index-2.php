@@ -81,7 +81,7 @@
 
             <div class="top1 clearfix">
                 <header>
-                    <div class="logo_wrapper log"><a href="index.php" class="logo"><img style="max-height:100px" src="images/logo.png" alt=""></a></div>
+                    <div class="logo_wrapper log"><a href="index.php" class="logo"><img style="max-height:100px" src="images/logo_2.png" alt=""></a></div>
                 </header>
                 <div class="top2 clearfix">
                     <div class="pull-right" style="margin-bottom:10px">
@@ -98,9 +98,8 @@
                                 </a>
                                 <div class="nav-collapse nav-collapse_ collapse">
                                     <ul class="nav sf-menu clearfix">
-                                        <li><a href="index.php">Inicio</a></li>
+                                        <li ><a href="index.php">Inicio</a></li>
                                         <li class="active"><a href="index-2.php">Tours</a></li>
-                                        <li><a href="index-5.php">Servicio de Transporte</a></li>
                                         <li><a href="index-6.php">Contacto</a></li>
                                     </ul>
                                 </div>
@@ -111,8 +110,6 @@
             </div>
 
             <div id="slider_wrapper">
-                <div class="img"><img src="http://via.placeholder.com/1600x275" alt=""></div>
-                <img src="images/grad2.png" alt="" class="grad2">
                 <div class="slider_bot">
                     <div class="page_title">Tours</div>
                     <div class="breadcrumbs1">
@@ -136,11 +133,11 @@
                                             <div class="caption">
                                                 <h4>Cerro Alegre</h4>
                                                 <p>
-                                                    <strong>Precio: $29.900</strong>
+                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
                                                 </p>
                                                 <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>			
+                                                    <span class="precio">$29.900</span>
+                                                </p>                                                
                                             </div>
                                         </div>
                                     </div>	
@@ -152,11 +149,11 @@
                                             <div class="caption">
                                                 <h4>Avenida Perú</h4>
                                                 <p>
-                                                    <strong>Precio: $39.900</strong>
-                                                </p>
-                                                <p>
                                                     Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
                                                 </p>			
+                                                <p>
+                                                   <span class="precio">$39.900</span>
+                                                </p>                                                
                                             </div>
                                         </div>
                                     </div>	
@@ -168,11 +165,11 @@
                                             <div class="caption">
                                                 <h4>La Sebastiana</h4>
                                                 <p>
-                                                    <strong>Precio: $34.900</strong>
-                                                </p>
-                                                <p>
                                                     Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
                                                 </p>			
+                                                <p>
+                                                    <span class="precio">$34.900</span>
+                                                </p>                                                
                                             </div>
                                         </div>
                                     </div>	
@@ -184,11 +181,11 @@
                                             <div class="caption">
                                                 <h4>Muelle Vergara</h4>
                                                 <p>
-                                                    <strong>Precio: $29.900</strong>
+                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
                                                 </p>
                                                 <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>			
+                                                    <span class="precio">$29.900</span>
+                                                </p>                                                
                                             </div>
                                         </div>
                                     </div>	
@@ -200,11 +197,11 @@
                                             <div class="caption">
                                                 <h4>Paseo 21 de Mayo</h4>
                                                 <p>
-                                                    <strong>Precio: $19.900</strong>
+                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
                                                 </p>
                                                 <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>			
+                                                    <span class="precio">$19.900</span>
+                                                </p>                                                
                                             </div>
                                         </div>
                                     </div>	
@@ -216,11 +213,11 @@
                                             <div class="caption">
                                                 <h4>Muelle Barón</h4>
                                                 <p>
-                                                    <strong>Precio: $29.900</strong>
+                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
                                                 </p>
                                                 <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>			
+                                                    <span class="precio">$29.900</span>
+                                                </p>                                                
                                             </div>
                                         </div>
                                     </div>	

@@ -95,7 +95,6 @@
                                     <ul class="nav sf-menu clearfix">
                                         <li class="active"><a href="index.php">Inicio</a></li>
                                         <li><a href="index-2.php">Tours</a></li>
-                                        <li><a href="index-5.php">Servicio de Transporte</a></li>
                                         <li><a href="index-6.php">Contacto</a></li>
                                     </ul>
                                 </div>
@@ -128,7 +127,7 @@
 
             </div>
 
-            <div class="slogan1">
+            <div class="slogan1" style="margin-bottom:10px">
                 <div class="container">
                     <div class="row">
                         <div class="span2">
@@ -137,10 +136,12 @@
                             <div class="slogan1_inner">
                                 <div class="txt1">Valparaíso Master Tour</div>	
                                 <div class="txt2">Tu guía en la ciudad</div>
-                                <div class="txt3">Hola! Soy Osvaldo gerente y fundador de VMT, he recorrido el mundo y he estado ligado al turismo por más de 15 años, he conocido
+                                <div class="txt3">Hola! Soy Osvaldo gerente y fundador de Valparaíso Master Tour, he recorrido el mundo y he estado ligado al turismo por más de 15 años. He conocido
                                 diferentes culturas e interactuado con personas de diferentes partes del mundo, me apasiona este negocio y es por eso que nace esta idea de crear VMT proyecto
-                                que no solo te permitirá ver Valparaíso y su historia, nuestra misión es involucrarte en esta aventura con cada rincón de esta hermosa región y mostrarte 
-                                a mi querida Valparaíso tal y como es, te propongo acompañarme a vivir la experiencia de este viaje no solo como turista con nosotros te sentirás como un 
+                                que no solo te permitirá ver Valparaíso y su historia.</div>
+                                <div class="txt3" style="text-align-last:center">
+                                Nuestra misión es involucrarte en esta aventura con cada rincón de esta hermosa región y mostrarte 
+                                a mi querida Valparaíso tal y como es. Te propongo acompañarme a vivir la experiencia de este viaje no solo como turista, con nosotros te sentirás como un 
                                 porteños mas.</div>
                             </div>	
                         </div>	
@@ -153,19 +154,7 @@
             <div class="slogan2">
                 <div class="container" style="width:100%">
                     <div class="row">
-                        <div class="span3">
-                            <img src="images/rallas.jpg" />
-                        </div>
-                        <div class="span6" style="padding-left:7vw;padding-top:12%;">
-                            <div class="slogan1_inner">
-                                <div class="txt1">Live</div>
-                                <div class="txt1">the real experience</div>
-                                <div class="txt1">with us</div>
-                            </div>	
-                        </div>	
-                        <div class="span3" style="float:right">
-                            <img src="images/rallas.jpg" />
-                        </div>                        
+                            <img src="images/rallas.png" />
                     </div>	
                 </div>	
             </div>            
@@ -270,7 +259,7 @@
                         <div class="span12">
                             <div class="bot1_title">Redes Sociales</div>
                             <div class="social_wrapper">
-                                <ul class="social clearfix">
+                                    <ul class="social clearfix">
                                     <li><a href="#"><img class="icono-social" src="images/social_ic1.png"></a></li>
                                     <li><a href="#"><img class="icono-social" src="images/social_ic2.png"></a></li>
                                     <li><a href="#"><img class="icono-social" src="images/social_ic4.png"></a></li>	
