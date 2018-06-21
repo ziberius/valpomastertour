@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="css/camera.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/animate.min.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/jquery-ui.structure.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/jquery-ui.theme.css" type="text/css" media="screen" />
 
         <script type="text/javascript" src="js/jquery.js"></script>  
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -25,6 +28,11 @@
 
         <script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
         <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/datepicker-es.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/additional-methods.js"></script>
+        <script type="text/javascript" src="js/messages_es.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
 
         <style>

@@ -11,9 +11,9 @@
 
             <div id="slider_wrapper">
                 <div class="slider_bot">
-                    <div class="page_title">Tours</div>
+                    <div class="page_title">Tour</div>
                     <div class="breadcrumbs1">
-                        <div class="breadcrumbs1_inner"><a href="index.php">Inicio</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;Tours</div>	
+                        <div class="breadcrumbs1_inner"><a href="index.php">Inicio</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;Tour</div>	
                     </div>
                 </div>
             </div>
@@ -23,123 +23,87 @@
                     <div class="row">
                         <div class="span12">
 
-                            <h1>Nuestros Tours</h1>
+                            <h1>Nuestro Tour</h1>
 
                             <div class="row">
-                                <div class="span3">
-                                    <div class="thumb2">
-                                        <div class="thumbnail clearfix">
-                                            <figure class=""><img src="http://via.placeholder.com/270x270" alt=""></figure>
-                                            <div class="caption">
-                                                <h4>Cerro Alegre</h4>
-                                                <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>
-                                                <p>
-                                                    <span class="precio">$29.900</span>
-                                                </p>                                                
-                                            </div>
-                                        </div>
-                                    </div>	
+
+                                <div class="span6">
+                                    <img src="images/tours/tour1.jpeg" alt="">
                                 </div>
-                                <div class="span3">
-                                    <div class="thumb2">
-                                        <div class="thumbnail clearfix">
-                                            <figure class=""><img src="http://via.placeholder.com/270x270" alt=""></figure>
-                                            <div class="caption">
-                                                <h4>Avenida Perú</h4>
-                                                <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>			
-                                                <p>
-                                                   <span class="precio">$39.900</span>
-                                                </p>                                                
-                                            </div>
-                                        </div>
-                                    </div>	
-                                </div>
-                                <div class="span3">
-                                    <div class="thumb2">
-                                        <div class="thumbnail clearfix">
-                                            <figure class=""><img src="http://via.placeholder.com/270x270" alt=""></figure>
-                                            <div class="caption">
-                                                <h4>La Sebastiana</h4>
-                                                <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>			
-                                                <p>
-                                                    <span class="precio">$34.900</span>
-                                                </p>                                                
-                                            </div>
-                                        </div>
-                                    </div>	
-                                </div>	
-<div class="span3">
-                                    <div class="thumb2">
-                                        <div class="thumbnail clearfix">
-                                            <figure class=""><img src="http://via.placeholder.com/270x270" alt=""></figure>
-                                            <div class="caption">
-                                                <h4>Muelle Vergara</h4>
-                                                <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>
-                                                <p>
-                                                    <span class="precio">$29.900</span>
-                                                </p>                                                
-                                            </div>
-                                        </div>
-                                    </div>	
-                                </div>
-                                <div class="span3">
-                                    <div class="thumb2">
-                                        <div class="thumbnail clearfix">
-                                            <figure class=""><img src="http://via.placeholder.com/270x270" alt=""></figure>
-                                            <div class="caption">
-                                                <h4>Paseo 21 de Mayo</h4>
-                                                <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>
-                                                <p>
-                                                    <span class="precio">$19.900</span>
-                                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                                    <input type="hidden" name="cmd" value="_s-xclick">
-                                                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-                                                    ">
-                                                    <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                                                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-                                                    </form>
-                                                    
-                                                </p>                                                
-                                            </div>
-                                        </div>
-                                    </div>	
-                                </div>
-                                <div class="span3">
-                                    <div class="thumb2">
-                                        <div class="thumbnail clearfix">
-                                            <figure class=""><img src="http://via.placeholder.com/270x270" alt=""></figure>
-                                            <div class="caption">
-                                                <h4>Muelle Barón</h4>
-                                                <p>
-                                                    Abore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                                </p>
-                                                <p>
-                                                    <span class="precio">$29.900</span>
-                                                </p>                                                
-                                            </div>
-                                        </div>
-                                    </div>	
+                                <div class="span6 caption">
+                                    <h4>Colorful Valpo</h4>
+                                    <p>
+                                        Iniciaremos nuestro recorrido en el Puerto de Valparaíso donde conoceremos la importancia de este gran muelle en la historia de Chile. 
+                                        Continuaremos nuestro camino utilizando un medio de transporte único en el país y el Segundo de mayor antigüedad en sudamerica para llegar a Plaza Echaurren una zona típica porteña. 
+                                        Caminaremos luego por las calles que marcaron la época de oro de Nuestro gran Valparaíso conociendo algunas historias y anécdotas únicas. Avanzaremos hasta llegar a uno de los funiculares mas visitados de nuestra ciudad el cual nos llevara a conocer los cerros, Concepción y Alegre, los cuales son ricos en arte callejero además de lo colorido de sus casas y miradores… 
+                                        Recorreremos sus callejones, escalas y conoceremos su rica historia para así descender y llegar a plaza Sotomayor y conocer mas de este gran monumento! 
+                                    </p>
+                                    <p>
+                                        ¡Te invitamos a conocer el gran Valparaíso, Patrimonio de la Humanidad, y nuestra ciudad querida! 
+                                    </p>
+                                    <p style="font-weight: bolder">Your local host will make you feel at home!!!</p>
+                                    <p>
+                                        <span id="cpcReservar" class="precio">Reservar: 65 USD</span>
+                                    </p>                                                
                                 </div>	                                
                             </div>
                         </div>
 
                     </div>	
-                </div>	
+                </div>
+                <div id="modalReservar" class="modal hide fade">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3>Reservar</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form id="pagarForm" class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <div class="control-group">
+                                <label class="control-label" for="inputEmail">Email</label>
+                                <div class="controls">
+                                    <input required type="email" id="inputEmail" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">Fecha</label>
+                                <div class="controls">
+                                    <input required type="text" name="fechaTour" id="fechaTour" placeholder="Fecha">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="4YDTAWQPE3GLC">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+                    </div>
+                </div>                
+                <div id="modalPagoConfirmado" class="modal hide fade">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3>Reserva Realizada</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Ha realizado su reserva con correo <span id="emailReserva"></span> para la fecha <span id="fechaReserva"></span>. Gracias por eligir a Valparaiso Master Tours.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+                    </div>
+                </div>                
             </div>
 
             <?php require_once 'include/footer.php' ?>
 
         </div>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/tours.js"></script>
     </body>
 </html>

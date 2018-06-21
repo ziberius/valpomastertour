@@ -39,13 +39,9 @@
                             <div class="slogan1_inner">
                                 <div class="txt1">Valparaíso Master Tour</div>	
                                 <div class="txt2">Tu guía en la ciudad</div>
-                                <div class="txt3">Hola! Soy Osvaldo gerente y fundador de Valparaíso Master Tour, he recorrido el mundo y he estado ligado al turismo por más de 15 años. He conocido
-                                diferentes culturas e interactuado con personas de diferentes partes del mundo, me apasiona este negocio y es por eso que nace esta idea de crear VMT proyecto
-                                que no solo te permitirá ver Valparaíso y su historia.</div>
+                                <div class="txt3">Hola! Soy Osvaldo gerente y fundador de VALPARAISO MASTER TOUR, he recorrido el mundo y he estado ligado al turismo por más de 15 años. He conocido diferentes culturas e interactuado con personas de diferentes partes del mundo. Me apasiona compartir mis experiencias de viaje, es por eso que nace la idea de crear VALPARAISO MASTER TOUR, proyecto que no solo te permitirá ver Valparaiso y su historia, sino que con nosotros también disfrutaras la auténtica travesía de esta colorida región.</div>
                                 <div class="txt3" style="text-align-last:center">
-                                Nuestra misión es involucrarte en esta aventura con cada rincón de esta hermosa región y mostrarte 
-                                a mi querida Valparaíso tal y como es. Te propongo acompañarme a vivir la experiencia de este viaje no solo como turista, con nosotros te sentirás como un 
-                                porteños mas.</div>
+                                Nuestra misión es involucrarte en esta aventura con cada rincón de este hermoso puerto y mostrarte a mi querida Valparaiso tal y como es. Te propongo acompañarme a vivir la experiencia de este viaje no solo como un turista, te aseguro que con nosotros te sentirás como un porteño real.</div>
                             </div>	
                         </div>	
                         <div class="span2">
@@ -77,10 +73,9 @@
                                                 <li>
                                                     <div class="thumb-carousel banner1">
                                                         <div class="thumbnail clearfix">
-                                                            <a href="#">
+                                                            <a>
                                                                 <figure>
                                                                     <img src="images/cirulos/circulo1.jpg" alt="">
-                                                                    <em></em>
                                                                 </figure>
                                                             </a>								
                                                         </div>
@@ -89,10 +84,9 @@
                                                 <li>
                                                     <div class="thumb-carousel banner1">
                                                         <div class="thumbnail clearfix">
-                                                            <a href="#">
+                                                            <a>
                                                                 <figure>
                                                                     <img src="images/cirulos/circulo2.jpg" alt="">
-                                                                    <em></em>
                                                                 </figure>
                                                             </a>								
                                                         </div>
@@ -101,10 +95,9 @@
                                                 <li>
                                                     <div class="thumb-carousel banner1">
                                                         <div class="thumbnail clearfix">
-                                                            <a href="#">
+                                                            <a>
                                                                 <figure>
                                                                     <img src="images/cirulos/circulo3.jpg" alt="">
-                                                                    <em></em>
                                                                 </figure>
                                                             </a>								
                                                         </div>
@@ -113,10 +106,9 @@
                                                 <li>
                                                     <div class="thumb-carousel banner1">
                                                         <div class="thumbnail clearfix">
-                                                            <a href="#">
+                                                            <a>
                                                                 <figure>
                                                                     <img src="images/cirulos/circulo4.jpg" alt="">
-                                                                    <em></em>
                                                                 </figure>
                                                             </a>								
                                                         </div>
@@ -136,7 +128,6 @@
         
 
         </div>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

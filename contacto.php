@@ -23,19 +23,13 @@
                     <div class="row">
                         <div class="span9">
 
-                            <h1>Nuestra Ubicación</h1>
-
-                            <figure class="google_map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.15142732536!2d-71.60387378424618!3d-33.05247998458475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0c1f10ec129%3A0x76c3f61b0c81bf2!2sAv.+Argentina+1170%2C+Valpara%C3%ADso%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1sen!2scl!4v1527464149206" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </figure>
+                            <h1>Datos de Contacto</h1>
 
                             <h3>Valparaiso Master Tour</h3>
 
                             <p>
-                                Avenida Argentina 1170<br>
-                                Valparaiso<br>
-                                Teléfono: +56997664121<br>
-                                E-mail: <a href="#">correo@valpomastertour.com</a>
+                                 Teléfono: +56930330787<br>
+                                E-mail: <a href="#">info@valparaisomastertour.com</a>
                             </p>
 
 
@@ -43,7 +37,7 @@
 
                             <div id="note"></div>
                             <div id="fields">
-                                <form id="ajax-contact-form" class="form-horizontal" action="javascript:alert('success!');">
+                                <form id="ajax-contact-form" class="form-horizontal" >
                                     <div class="row">
                                         <div class="span3">
                                             <div class="control-group">
@@ -100,37 +94,48 @@
 
                             <div class="testimonial1">
                                 <div class="txt1">
-                                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.	
+                                    Le personnel nous a précisé  les différents types d'activités afin d'organiser au mieux nos excursions, l'organisation rapide et facile, notre guide était polyglotte, charmant et avec connaissance de son sujet. Nous avons passé un très bon jour.	
                                 </div>
                                 <div class="txt2">
-                                    <span>Alex Williams</span><br><a href="#">http://demolink.org</a>
+                                    <span>@Thirstypooch </span>
                                 </div>	
                             </div>
 
                             <div class="testimonial1">
                                 <div class="txt1">
-                                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.	
+                                    Everybody had a great time in Valparaiso, our guy was very friendly and informed, they outperformed to meet  expectations, had the most amazing time.
                                 </div>
                                 <div class="txt2">
-                                    <span>Jesica Smith</span><br><a href="#">http://demolink.org</a>
+                                    <span>@Luminariazh</span>
                                 </div>	
                             </div>
-
-
-
-
-
+                            
+                            <div class="testimonial1">
+                                <div class="txt1">
+                                    Incroyable agence d'excursions, en vacances au Chili, nous avons exploré los abords de notre hôtel pour voir quoi faire en Valparaiso et nous avons trouvé l'agence Master Tour, où Osvaldo nous a bien expliqué toutes les excursions, très gentille.
+Les excursions sont moins chères et à mon avis plus professionnelles.
+                                </div>
+                                <div class="txt2">
+                                    <span>@Math_Blt1</span>
+                                </div>	
+                            </div>                            
+                            <div class="testimonial1">
+                                <div class="txt1">
+                                    Fue un paseo extraordinario conoci y aprendi mucho de los portenos en Valparaiso, los guías nos atendieron excelente , lo recomiendo! 
+                                </div>
+                                <div class="txt2">
+                                    <span>@lucyzamora28</span>
+                                </div>	
+                            </div>                            
                         </div>	
                     </div>	
                 </div>	
             </div>
-
-
-
             <?php require_once 'include/footer.php' ?>
 
 
         </div>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/contacto.js"></script>
+        <script type="text/javascript" src="js/cform.js"></script>
     </body>
 </html>
