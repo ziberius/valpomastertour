@@ -25,9 +25,9 @@
                                 </a>
                                 <div class="nav-collapse nav-collapse_ collapse">
                                     <ul id="ulMenu" class="nav sf-menu clearfix">
-                                        <li><a href="index.php">Inicio</a></li>
-                                        <li><a href="tours.php">Tour</a></li>
-                                        <li><a href="contacto.php">Contacto</a></li>
+                                        <li><a id="menuInicio" href="index.php">Inicio</a></li>
+                                        <li><a id="menuTour" href="tours.php">Tour</a></li>
+                                        <li><a id="menuContacto" href="contacto.php">Contacto</a></li>
                                     </ul>
                                 </div>
                             </div>

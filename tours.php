@@ -11,9 +11,9 @@
 
             <div id="slider_wrapper">
                 <div class="slider_bot">
-                    <div class="page_title">Tour</div>
+                    <div id="" class="page_title">Tour</div>
                     <div class="breadcrumbs1">
-                        <div class="breadcrumbs1_inner"><a href="index.php">Inicio</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;Tour</div>	
+                        <div class="breadcrumbs1_inner"><a href="index.php" id="bcInicio">Inicio</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;<span id=bcTour">Tour</span></div>	
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     <div class="row">
                         <div class="span12">
 
-                            <h1>Nuestro Tour</h1>
+                            <h1 id="tituloTour">Nuestro Tour</h1>
 
                             <div class="row">
 
@@ -32,14 +32,12 @@
                                 </div>
                                 <div class="span6 caption">
                                     <h4>Colorful Valpo</h4>
-                                    <p>
-                                        Iniciaremos nuestro recorrido en el Puerto de Valparaíso donde conoceremos la importancia de este gran muelle en la historia de Chile. 
-                                        Continuaremos nuestro camino utilizando un medio de transporte único en el país y el Segundo de mayor antigüedad en sudamerica para llegar a Plaza Echaurren una zona típica porteña. 
-                                        Caminaremos luego por las calles que marcaron la época de oro de Nuestro gran Valparaíso conociendo algunas historias y anécdotas únicas. Avanzaremos hasta llegar a uno de los funiculares mas visitados de nuestra ciudad el cual nos llevara a conocer los cerros, Concepción y Alegre, los cuales son ricos en arte callejero además de lo colorido de sus casas y miradores… 
-                                        Recorreremos sus callejones, escalas y conoceremos su rica historia para así descender y llegar a plaza Sotomayor y conocer mas de este gran monumento! 
+                                    <p id="tourDesc1">
+                                        Iniciaremos nuestro recorrido en el Puerto de Valparaíso donde conoceremos la importancia de este gran muelle en la historia de Chile. Continuaremos nuestro camino utilizando un medio de transporte único en el país y el Segundo de mayor antigüedad en sudamerica para llegar a una zona típica porteña. Caminaremos luego por las calles que marcaron la época de oro de Nuestro gran Valparaíso conociendo algunas historias y anécdotas únicas. Avanzaremos hasta llegar a uno de los funiculares mas visitados de nuestra ciudad el cual nos llevara a conocer los cerros ricos en arte callejero además de lo colorido de sus casas y miradores… Recorreremos sus callejones, escalas y conoceremos su rica historia para así descender y llegar a conocer nuestro gran monumento! 
+
                                     </p>
-                                    <p>
-                                        ¡Te invitamos a conocer el gran Valparaíso, Patrimonio de la Humanidad, y nuestra ciudad querida! 
+                                    <p id="tourDesc2">
+                                        ¡Te invitamos a conocer el gran Valparaíso, Patrimonio de la Humanidad, y nuestra ciudad querida!
                                     </p>
                                     <p style="font-weight: bolder">Your local host will make you feel at home!!!</p>
                                     <p>
@@ -59,13 +57,13 @@
                     <div class="modal-body">
                         <form id="pagarForm" class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <div class="control-group">
-                                <label class="control-label" for="inputEmail">Email</label>
+                                <label id="labelInputEmail" class="control-label" for="inputEmail">Email</label>
                                 <div class="controls">
                                     <input required type="email" id="inputEmail" placeholder="Email">
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label" for="inputPassword">Fecha</label>
+                                <label id="labelInputFecha" class="control-label" for="inputPassword">Fecha</label>
                                 <div class="controls">
                                     <input required type="text" name="fechaTour" id="fechaTour" placeholder="Fecha">
                                 </div>
@@ -76,9 +74,10 @@
                                         <input type="hidden" name="hosted_button_id" value="4YDTAWQPE3GLC">
                                         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                                         <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-
+                                        <button id="tour1Webpay" type="button" class="btn">Webpay</button>
                                 </div>
                             </div>
+                            
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -91,7 +90,7 @@
                         <h3>Reserva Realizada</h3>
                     </div>
                     <div class="modal-body">
-                        <p>
+                        <p id="pagoText">
                             Ha realizado su reserva con correo <span id="emailReserva"></span> para la fecha <span id="fechaReserva"></span>. Gracias por eligir a Valparaiso Master Tours.
                         </p>
                     </div>
