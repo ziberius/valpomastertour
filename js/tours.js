@@ -1,6 +1,6 @@
 var tours = {
     inicializar() {
-        $("#fechaTour").datepicker({
+        $("#inputFechaTour").datepicker({
             constrainInput: true,
             dateFormat: "dd/mm/yy",
             onClose: function (selectedDate) {
@@ -27,7 +27,7 @@ var tours = {
         $("#cpcReservar").on("click", function () {
             $("#modalReservar").modal("show");
             $("#inputEmail").val("");
-            $("#fechaTour").val("");
+            $("#inputFechaTour").val("");
         });
 
         $("#inputEmail").on("change", function () {

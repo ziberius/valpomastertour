@@ -8,10 +8,11 @@
         <div id="main">
 
             <?php require_once 'include/header.php' ?>
-
+            <div class="page_title_main">
+                <div id="" class="page_title">Tour</div>
+            </div>
             <div id="slider_wrapper">
                 <div class="slider_bot">
-                    <div id="" class="page_title">Tour</div>
                     <div class="breadcrumbs1">
                         <div class="breadcrumbs1_inner"><a href="index.php" id="bcInicio">Inicio</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;<span id=bcTour">Tour</span></div>	
                     </div>
@@ -65,7 +66,7 @@
                             <div class="control-group">
                                 <label id="labelInputFecha" class="control-label" for="inputPassword">Fecha</label>
                                 <div class="controls">
-                                    <input required type="text" name="fechaTour" id="fechaTour" placeholder="Fecha">
+                                    <input required type="text" name="fechaTour" id="inputFechaTour" placeholder="Fecha">
                                 </div>
                             </div>
                             <div class="control-group">
@@ -81,7 +82,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+                        <button class="btn btnCerrar" data-dismiss="modal" aria-hidden="true">Cerrar</button>
                     </div>
                 </div>                
                 <div id="modalPagoConfirmado" class="modal hide fade">
@@ -95,7 +96,7 @@
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+                        <button class="btn btnCerrar" data-dismiss="modal" aria-hidden="true">Cerrar</button>
                     </div>
                 </div>                
             </div>
