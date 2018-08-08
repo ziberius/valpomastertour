@@ -1,4 +1,4 @@
 <?php
 // To
-define("WEBMASTER_EMAIL", 'danilo.vasquez@gmail.com');
+define("WEBMASTER_EMAIL", 'info@valparaisomastertour.com');
 ?>

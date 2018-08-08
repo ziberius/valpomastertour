@@ -1554,6 +1554,10 @@
     }
 }
  @media (min-width: 481px) and (max-width: 767px) {
+    input.effect-19{
+        margin-bottom:4vh;
+    }     
+     
 }
 /* Landscape phones and down */
  @media (max-width: 480px) {
@@ -1591,6 +1595,11 @@
         font-size: 50px;
          line-height: 50px;
     }
+    
+    input.effect-19{
+        margin-bottom:4vh;
+    }
+    
 }
  .b{
      height: 1203px;
@@ -1668,7 +1677,12 @@
 :focus{outline: none;}
 
 .col-3{float: left; position: relative;} /* necessary to give position: relative to parent. */
-.col-12{float: left; margin: 40px 3%; position: relative;} /* necessary to give position: relative to parent. */
+.col-12{
+    float: left; 
+    margin-top: 3vh; 
+    margin-bottom:2vh;
+    position: relative;
+} /* necessary to give position: relative to parent. */
 input.effect-19{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
 textarea.effect-19{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
 
@@ -1689,8 +1703,8 @@ textarea.effect-19{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 .effect-19:focus ~ .focus-border i:after,
 .has-content.effect-19 ~ .focus-border i:before,
 .has-content.effect-19 ~ .focus-border i:after{top: -1px; height: 100%; transition: 0.6s;}
-.effect-19 ~ label{position: absolute; left: 14px; width: 100%; top: 1px; color: #aaa; transition: 0.3s; z-index: 10; letter-spacing: 0.5px;}
-.effect-19:focus ~ label, .has-content.effect-19 ~ label{top: -18px; left: 0; font-size: 12px; color: #3399FF; transition: 0.3s;}
-.input-effect label{
+.effect-19 ~ .textPlaceholder{position: absolute; left: 14px; width: 100%; top: 1px; color: #aaa; transition: 0.3s; z-index: 10; letter-spacing: 0.5px;}
+.effect-19:focus ~ .textPlaceholder, .has-content.effect-19 ~ .textPlaceholder{top: -18px; left: 0; font-size: 12px; color: #3399FF; transition: 0.3s;}
+.input-effect .textPlaceholder{
     cursor: text;
 }

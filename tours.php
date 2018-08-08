@@ -56,7 +56,7 @@
                         <h3>Reservar</h3>
                     </div>
                     <div class="modal-body">
-                        <form id="pagarForm" class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <form id="formValidar" class="form-horizontal">
                             <div class="control-group">
                                 <label id="labelInputEmail" class="control-label" for="inputEmail">Email</label>
                                 <div class="controls">
@@ -70,16 +70,20 @@
                                 </div>
                             </div>
                             <div class="control-group">
-                                <div class="controls">
-                                        <input type="hidden" name="cmd" value="_s-xclick">
-                                        <input type="hidden" name="hosted_button_id" value="4YDTAWQPE3GLC">
-                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-                                        <button id="tour1Webpay" type="button" class="btn">Webpay</button>
+                                <div style="text-align: center">
+                                    <input id="btnPagarPaypal" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" alt="PayPal - The safer, easier way to pay online!">
+                                    <input id="btnPagarWebpay" type="image" src="https://www.transbank.cl/public/img/botonwebpay.gif"/>
                                 </div>
                             </div>
-                            
                         </form>
+                        <form name="pagarFormPaypal" id="pagarFormPaypal" class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="4YDTAWQPE3GLC">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
+                        <form name="btnPago" id="pagarFormWebpay" method="post" action="https://webpay3g.transbank.cl/filtroUnificado/buttonService">
+                            <input type="hidden" name="buttonId" value="c01990a7bf2c392c1426ba95b3fc18b0"/>
+                        </form>                        
                     </div>
                     <div class="modal-footer">
                         <button class="btn btnCerrar" data-dismiss="modal" aria-hidden="true">Cerrar</button>
@@ -88,7 +92,7 @@
                 <div id="modalPagoConfirmado" class="modal hide fade">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h3>Reserva Realizada</h3>
+                        <h3>Reserva</h3>
                     </div>
                     <div class="modal-body">
                         <p id="pagoText">

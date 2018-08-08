@@ -41,22 +41,22 @@
                                 <form id="ajax-contact-form" class="form-horizontal" >
                                     <div class="row">
                                         <div class="col-3 span3 input-effect">
-                                            <input class="effect-19" id="inputNombre" type="text" placeholder="">
-                                            <label id="lbNombreCompleto">Nombre Completo:</label>
+                                            <input class="effect-19" name="inputNombre" id="inputNombre" type="text" placeholder="" required>
+                                            <label class="textPlaceholder" id="lbNombreCompleto">Nombre Completo:</label>
                                             <span class="focus-border">
                                                 <i></i>
                                             </span>
                                         </div>   
                                         <div class="col-3 span3 input-effect">
-                                            <input class="effect-19" id="inputEmail" type="text" placeholder="">
-                                            <label id="lbTuEmail">Tu email:</label>
+                                            <input class="effect-19" name="inputEmail" id="inputEmail" type="email" placeholder="" required>
+                                            <label class="textPlaceholder" id="lbTuEmail">Tu email:</label>
                                             <span class="focus-border">
                                                 <i></i>
                                             </span>
                                         </div> 
                                         <div class="col-3 span3 input-effect">
-                                            <input class="effect-19" id="inputEmail" type="text" placeholder="">
-                                            <label id="lbTelefono">Teléfono:</label>
+                                            <input class="effect-19" name="inputTelefono" id="inputTelefono" type="text" placeholder="">
+                                            <label class="textPlaceholder" id="lbTelefono">Teléfono:</label>
                                             <span class="focus-border">
                                                 <i></i>
                                             </span>
@@ -64,8 +64,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="span9 col-12 input-effect">
-                                            <textarea class="effect-19" id="inputMessage" name="content" ></textarea>
-                                            <label id="lbMensaje">Mensaje:</label> 
+                                            <textarea class="effect-19" name="inputMessage" required id="inputMessage" ></textarea>
+                                            <label class="textPlaceholder" id="lbMensaje">Mensaje:</label> 
                                             <span class="focus-border">
                                                 <i></i>
                                             </span>
@@ -125,6 +125,5 @@
 
         </div>
         <script type="text/javascript" src="js/contacto.js"></script>
-        <script type="text/javascript" src="js/cform.js"></script>
     </body>
 </html>

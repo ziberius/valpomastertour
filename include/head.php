@@ -32,9 +32,7 @@
         <script type="text/javascript" src="js/datepicker-es.js"></script>
         <script type="text/javascript" src="js/jquery.validate.js"></script>
         <script type="text/javascript" src="js/additional-methods.js"></script>
-        <script type="text/javascript" src="js/messages_es.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/jquery.localizationTool.js"></script>
 
         <style>
 		/* Loading animation keyframe and style */

@@ -14,55 +14,24 @@ if($post)
 {
 include 'functions.php';
 
-$name = stripslashes($_POST['name']);
-$email = trim($_POST['email']);
-$phone = stripslashes($_POST['phone']);
-$subject = stripslashes($_POST['subject']);
-$message = "Site visitor information:
+$name = stripslashes($_POST['inputNombre']);
+$email = trim($_POST['inputEmail']);
+$phone = stripslashes($_POST['inputTelefono']);
+$subject = "Correo de contacto Valparaiso Master Tour";
+$message = "
 
-Name: ".$_POST['name']
+Nombre: ".$_POST['inputNombre']
 ."
 
-E-mail Address: ".$_POST['email']
+E-mail: ".$_POST['inputEmail']
 ."
 
-Phone: ".$_POST['phone']
+Teléfono: ".$_POST['inputTelefono']
 ."
 
-Message: ".$_POST['content'];
+Mensaje: ".$_POST['inputMessage'];
 
-
-$error = '';
-
-// Check name
-
-if(!$name)
-{
-$error .= 'Please enter your First name.<br />';
-}
-// Check email
-
-if(!$email)
-{
-$error .= 'Please enter an e-mail address.<br />';
-}
-
-if($email && !ValidateEmail($email))
-{
-$error .= 'Please enter a valid e-mail address.<br />';
-}
-
-
-if(isset($_SESSION['captcha_keystring']) && strtolower($_SESSION['captcha_keystring']) != strtolower($_POST['capthca']))
-{
-$error .= "Incorect captcha.<br />";
-}
-
-
-if(!$error)
-{
-
-	$mail = mail(WEBMASTER_EMAIL, $subject, $message,
+    $mail = mail(WEBMASTER_EMAIL, $subject, $message,
      "From: ".$name." <".$email.">\r\n"
     ."Reply-To: ".$email."\r\n"
     ."X-Mailer: PHP/" . phpversion());
@@ -71,11 +40,9 @@ if($mail)
 {
 echo 'OK';
 }
-
-}
 else
 {
-echo '<div class="notification_error">'.$error.'</div>';
+echo '<div class="notification_error">Error al enviar el mensaje.</div>';
 }
 
 }

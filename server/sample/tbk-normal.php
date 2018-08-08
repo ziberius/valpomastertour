@@ -171,12 +171,11 @@ switch ($action) {
 
         /** Rescatamos resultado y datos de la transaccion */
         $result = $webpay->getNormalTransaction()->getTransactionResult($token);
-
+        echo '<script>window.localStorage.clear();</script>';
         /** Verificamos resultado  de transacción */
         if ($result->detailOutput->responseCode === 0) {
 
             /** propiedad de HTML5 (web storage), que permite almacenar datos en nuestro navegador web */
-            echo '<script>window.localStorage.clear();</script>';
             echo '<script>localStorage.setItem("authorizationCode", ' . $result->detailOutput->authorizationCode . ')</script>';
             echo '<script>localStorage.setItem("amount", ' . $result->detailOutput->amount . ')</script>';
             echo '<script>localStorage.setItem("buyOrder", ' . $result->buyOrder . ')</script>';
@@ -184,8 +183,9 @@ switch ($action) {
             $message = "Pago ACEPTADO por webpay (se deben guardatos para mostrar voucher)";
             $next_page = $result->urlRedirection;
         } else {
-            $message = "Pago RECHAZADO por webpay - " . utf8_decode($result->detailOutput->responseDescription);
+            $message = "Pago RECHAZADO por webpay - " . $result->detailOutput->responseDescription;
             $next_page = '';
+            $result = 'rechazado';
         }
 
         $button_name = "Continuar &raquo;";
@@ -264,7 +264,7 @@ if (!isset($request) || !isset($result) || !isset($message) || !isset($next_page
 <?php if (strlen($next_page) && $post_array) { ?>
 
     <script>
-        window.location.href = "http://www.valparaisomastertour.com/tours.php?pago=true";
+        window.location.href = "https://www.valparaisomastertour.com/tours.php?pago=true";
     </script>
 
 <?php } elseif (strlen($next_page)) { ?>
@@ -277,8 +277,12 @@ if (!isset($request) || !isset($result) || !isset($message) || !isset($next_page
     
     <script>$("#formPagar").submit();</script>
 
+<?php } elseif ($result == 'rechazado') { ?> s
+    <script>
+        sessionStorage.setItem("pagoRechazado", '<?php  echo $message; ?>');
+        window.location.href = "https://www.valparaisomastertour.com/tours.php?pago=true";
+    </script>
 <?php } ?>
-
             </div>
     </body>
 </html>

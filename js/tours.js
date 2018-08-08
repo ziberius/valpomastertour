@@ -2,29 +2,31 @@ var tours = {
     inicializar() {
         $("#inputFechaTour").datepicker({
             constrainInput: true,
-            dateFormat: "dd/mm/yy",
-            onClose: function (selectedDate) {
-                general.guardarValor("fechaPago", selectedDate);
-            }
+            dateFormat: "dd/mm/yy"
         });
-        $("#pagarForm").validate({
+        $("#formValidar").validate({
             rules: {
                 fechaTour: {
                     required: true,
                     dateITA: true
                 }
             },
-
             submitHandler: function (form) {
-                // some other code
-                // maybe disabling submit button
-                // then:
-                $(form).submit();
-            }
+                return false;
+            }            
         });
+    },
+    guardarDatosSesion: function(){
+        general.guardarValor("fechaPago", $("#inputFechaTour").val());
+        general.guardarValor("emailPago", $("#inputEmail").val());
+    },
+    validarCampos: function(){
+        return $("#formValidar").validate().element("#inputEmail") && $("#formValidar").validate().element("#inputFechaTour");
     },
     botones() {
         $("#cpcReservar").on("click", function () {
+            general.limpiarValores();
+            $("#formValidar").validate().resetForm();
             $("#modalReservar").modal("show");
             $("#inputEmail").val("");
             $("#inputFechaTour").val("");
@@ -37,6 +39,20 @@ var tours = {
         $("#tour1Webpay").on("click", function () {
             window.location.href = "server/sample/tbk-normal.php";
         });
+        
+        $("#btnPagarPaypal").on("click",function(){
+            if(tours.validarCampos()){
+                tours.guardarDatosSesion();
+                $("#pagarFormPaypal").submit();
+            };
+        });
+        
+        $("#btnPagarWebpay").on("click",function(){
+            if(tours.validarCampos()){
+                tours.guardarDatosSesion();
+                $("#pagarFormWebpay").submit();
+            };            
+        });
     },
     cargar: function () {
         $(document).ready(function () {
@@ -46,32 +62,40 @@ var tours = {
         });
     },
     validarPago: function () {
-        if (general.getUrlParameter("pago") === "true") {
+        if (general.getUrlParameter("pago") === "true" && general.cargarValor("emailPago") !== null && general.cargarValor("fechaPago") !== null) {
             var email = general.cargarValor("emailPago");
             var fecha = general.cargarValor("fechaPago");
 
+            var rechazo = general.cargarValor("pagoRechazado");
 
+            if (rechazo !== undefined && rechazo !== null) {
+                $("#pagoText").text(rechazo);
+                $("#modalPagoConfirmado").modal("show");
+                general.limpiarValores();
+            } else {
 
-            var datos = {
-                'correo': email,
-                'fecha': fecha
-            };
+                var datos = {
+                    'correo': email,
+                    'fecha': fecha
+                };
 
-            $.ajax({
-                type: "POST",
-                url: "../server/contact-form.php",
-                data: JSON.stringify(datos),
-                dataType: "JSON",
-                success: function (msg) {
-                    if (msg.success){ // Message Sent? Show the 'Thank You' message and hide the form
-                        $("#emailReserva").text(email);
-                        $("#fechaReserva").text(fecha);
-                    } else{
-                        $("#pagoText").text("Error al enviar correo.");
+                $.ajax({
+                    type: "POST",
+                    url: "../server/contact-form.php",
+                    data: JSON.stringify(datos),
+                    dataType: "JSON",
+                    success: function (msg) {
+                        if (msg.success) { // Message Sent? Show the 'Thank You' message and hide the form
+                            $("#emailReserva").text(email);
+                            $("#fechaReserva").text(fecha);
+                        } else {
+                            $("#pagoText").text("Error al enviar correo.");
+                        }
+                        $("#modalPagoConfirmado").modal("show");
+                        general.limpiarValores();
                     }
-                    $("#modalPagoConfirmado").modal("show");
-                }
-            });
+                });
+            }
         }
     }
 };

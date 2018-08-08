@@ -149,8 +149,9 @@ var general = {
 
             $(".col-3 input").val("");
 
-            $(".input-effect").on("click","label",function(){
-               $(this).siblings("input.effect-19").focus();
+            $(".input-effect").on("click", "label", function () {
+                var item = $(this);
+                setTimeout(function(){item.siblings("input.effect-19").focus();},0);
             });
 
             $(".input-effect input,.input-effect textarea").focusout(function () {
@@ -224,11 +225,41 @@ var general = {
         $("#idiomaEn").on("click", function () {
             general.guardarValor("idioma", "en");
             general.setearTextos();
+            $.extend($.validator.messages, {
+                required: "This field is required.",
+                email: "Please enter a valid email address.",
+                date: "Please enter a valid date.",
+                dateISO: "Please enter a valid date.",
+                dateITA: "Please enter a valid date.",
+                number: "Please enter a valid number."
+            });
+
+            if ($("#ajax-contact-form").length > 0) {
+                $("#ajax-contact-form").validate().resetForm();
+            }
+            if ($("#formValidar").length > 0) {
+                $("#formValidar").validate().resetForm();
+            }
         });
         $("#idiomaEs").on("click", function () {
             general.guardarValor("idioma", "es");
             general.setearTextos();
+            $.extend($.validator.messages, {
+                required: "Este campo es obligatorio.",
+                email: "Por favor, escribe una dirección de correo válida.",
+                date: "Por favor ingrese una fecha válida.",
+                dateISO: "Por favor ingrese una fecha válida.",
+                dateITA: "Por favor ingrese una fecha válida.",
+                number: "Por favor ingrese un número válido."
+            });
+            if ($("#ajax-contact-form").length > 0) {
+                $("#ajax-contact-form").validate().resetForm();
+            }
+            if ($("#formValidar").length > 0) {
+                $("#formValidar").validate().resetForm();
+            }
         });
+
     },
     getPagina: function () {
         var ruta = window.location.pathname;
@@ -243,6 +274,9 @@ var general = {
     },
     cargarValor: function (item) {
         return sessionStorage.getItem(item);
+    },
+    limpiarValores: function () {
+        sessionStorage.clear();
     }
 };
 
